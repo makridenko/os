@@ -1,0 +1,13 @@
+[Unit]
+Description=Lock screen service
+Before=sleep.target
+
+[Service]
+User=alex
+ExecStart=exec-lock
+Type=forking
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=sleep.target
+
