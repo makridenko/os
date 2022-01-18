@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [ -d ~/Downloads ]; then
+  rm -rf ~/Downloads
+fi
+
