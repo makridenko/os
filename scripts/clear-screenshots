@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [ -d ~/screenshots/ ]; then
+  rm -rf ~/screenshots/
+fi
+

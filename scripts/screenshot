@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ ! -d ~/screenshots/ ]; then
+  mkdir ~/screenshots/
+fi
+
+scrot ~/screenshots/%Y-%m-%d-%T.png
+
