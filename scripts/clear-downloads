@@ -4,3 +4,5 @@ if [ -d ~/Downloads ]; then
   rm -rf ~/Downloads
 fi
 
+dunstify 'delete folder ~/Download'
+

@@ -4,3 +4,5 @@ if [ -d ~/screenshots/ ]; then
   rm -rf ~/screenshots/
 fi
 
+dunstify 'delete folder ~/screenshots'
+
