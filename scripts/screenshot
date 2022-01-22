@@ -4,5 +4,9 @@ if [ ! -d ~/screenshots/ ]; then
   mkdir ~/screenshots/
 fi
 
-scrot ~/screenshots/%Y-%m-%d-%T.png
+SCREEN_PATH=~/screenshots/$(date +%Y-%m-%d-%T)
+
+scrot $SCREEN_PATH
+
+dunstify 'screenhot taken' -I $SCREEN_PATH
 
