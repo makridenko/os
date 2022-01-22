@@ -1,0 +1,10 @@
+# Reference: /etc/dunst/dunstrc
+
+[global]
+  frame_width = 1
+
+[urgency_normal]
+  background = "#212629"
+  foreground = "#737c80"
+  timeout = 3
+
