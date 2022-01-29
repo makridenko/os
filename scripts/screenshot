@@ -9,5 +9,9 @@ SCREEN_PATH=~/screenshots/${DATE}
 
 scrot $SCREEN_PATH
 
+# Send notification
 dunstify $DATE -I $SCREEN_PATH
+
+# Add image to clipboard
+xclip -se c -t image/png -i $SCREEN_PATH
 
