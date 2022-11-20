@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Clear docker
+docker volume prune -f
+
+# Clear local cache
+sudo du -sh ~/.cache/
+sudo rm -rf ~/.cache/
+
+# Clear pacman cache
+sudo pacman -Sc
+sudo pacman -Rns $(pacman -Qtdq)
+
+# Custom scripts
+clear-downloads
+clear-screenshots
+
